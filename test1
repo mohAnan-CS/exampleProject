@@ -1,0 +1,44 @@
+package sample;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.sql.*;
+
+public class Main extends Application {
+    public static Connection con;
+    public static Stage stage ;
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+
+        stage = primaryStage ;
+        Parent root = FXMLLoader.load(getClass().getResource("WelcomePage.fxml"));
+
+        primaryStage.setTitle("Hotel System");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.setResizable(false);
+        primaryStage.show();
+    }
+
+
+
+    public static void main(String[] args) throws Exception{
+        //EXECUTE
+        //SQL.execute("INSERT INTO premission VALUES (1, 'TTT', 'AAA')");
+
+        // SELECT
+        //        ResultSet set;
+        //        set = SQL.select("SELECT * FROM premission");
+        //        while(set.next())
+        //            System.out.println(set.getString(2));
+
+
+
+
+
+        launch(args);
+    }
+}
