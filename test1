@@ -26,15 +26,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) throws Exception{
-        //EXECUTE
-        //SQL.execute("INSERT INTO premission VALUES (1, 'TTT', 'AAA')");
-
-        // SELECT
-        //        ResultSet set;
-        //        set = SQL.select("SELECT * FROM premission");
-        //        while(set.next())
-        //            System.out.println(set.getString(2));
-
+        
 
 
 
